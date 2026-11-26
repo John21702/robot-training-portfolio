@@ -1,0 +1,26 @@
+# Serial log — ESP32 OLED + INMP441 unit test
+# Board: classic ESP32 Dev Module, Arduino-esp32 core 1.0.4
+# Serial baud: 115200
+# Date: 2026-11-25
+# Fields: peak=frame peak abs(PCM)  avg=frame mean abs(PCM)  start=voice-on threshold  silence=silence threshold  voice=1 above start threshold
+# First block: quiet room. Second block: speaking / clapping near the microphone.
+
+peak=468 avg=373 start=2300 silence=1800 voice=0
+peak=225 avg=88 start=2300 silence=1800 voice=0
+peak=431 avg=344 start=2300 silence=1800 voice=0
+peak=459 avg=281 start=2300 silence=1800 voice=0
+peak=571 avg=407 start=2300 silence=1800 voice=0
+peak=709 avg=595 start=2300 silence=1800 voice=0
+peak=834 avg=664 start=2300 silence=1800 voice=0
+peak=624 avg=532 start=2300 silence=1800 voice=0
+peak=32421 avg=14106 start=2300 silence=1800 voice=1
+peak=32291 avg=22761 start=2300 silence=1800 voice=1
+peak=30644 avg=27959 start=2300 silence=1800 voice=1
+peak=9249 avg=8676 start=2300 silence=1800 voice=1
+peak=1306 avg=977 start=2300 silence=1800 voice=0
+peak=4986 avg=4716 start=2300 silence=1800 voice=1
+peak=7816 avg=7660 start=2300 silence=1800 voice=1
+
+# Summary
+# Quiet:   peak 225-834,  avg 88-664,   voice=0
+# Speaking: peak 4986-32421, avg 4716-27959, voice=1
